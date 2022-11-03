@@ -34,7 +34,7 @@ export default function HeroCard(props) {
     };
 
     return (
-        <div className="container my-5">
+        <div className="col-md-4 my-3">
 
             <Card sx={{ maxWidth: 345 }}>
                 <CardHeader
