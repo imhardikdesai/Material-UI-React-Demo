@@ -3,7 +3,6 @@ import HeroCard from "./components/Hero/HeroCard";
 import Footer from "./components/Footer/Footer";
 import logo from './Assets/Avatar.png';
 import dish from './Assets/foodDish.jpg';
-import Alert from '@mui/material/Alert';
 
 function App() {
   return (
