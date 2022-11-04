@@ -10,12 +10,12 @@ function App() {
       <NavBar logo={logo} />
 
       <div style={{ margin: "20px auto" }} className="row container">
-        <HeroCard avatar={logo} logo={dish} />
-        <HeroCard avatar={logo} logo={dish} />
-        <HeroCard avatar={logo} logo={dish} />
-        <HeroCard avatar={logo} logo={dish} />
-        <HeroCard avatar={logo} logo={dish} />
-        <HeroCard avatar={logo} logo={dish} />
+        <HeroCard avatar={logo} logo={dish} rating={4} />
+        <HeroCard avatar={logo} logo={dish} rating={2} />
+        <HeroCard avatar={logo} logo={dish} rating={5} />
+        <HeroCard avatar={logo} logo={dish} rating={1} />
+        <HeroCard avatar={logo} logo={dish} rating={2} />
+        <HeroCard avatar={logo} logo={dish} rating={3} />
       </div>
 
       <div className="container-fluid">

@@ -7,6 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
+import Rating from '@mui/material/Rating'
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
@@ -28,7 +29,6 @@ const ExpandMore = styled((props) => {
 
 export default function HeroCard(props) {
     const [expanded, setExpanded] = React.useState(false);
-
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
@@ -69,6 +69,9 @@ export default function HeroCard(props) {
                     <IconButton aria-label="share">
                         <ShareIcon />
                     </IconButton>
+                    <div className="mx-5">
+                        <Rating name="read-only" value={props.rating} readOnly />
+                    </div>
                     <ExpandMore
                         expand={expanded}
                         onClick={handleExpandClick}
